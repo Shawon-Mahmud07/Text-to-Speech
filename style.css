@@ -57,31 +57,30 @@ body {
   background-size: 40px 60px;
 }
 
-.main-section{
-  border-radius: 10px;
+.main-section {
   width: 50%;
-  max-width: 800px;
-
-  background-color: #35e6c2af;
   margin: 25px auto 0px;
+  background-color: #35e6c3a9;
+  border-radius: 10px;
+  max-width: 800px;
   text-align: center;
   padding: 30px 0px;
 }
 
-.main-section h1{
+.main-section h1 {
   font-size: 30px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.enter-text{
+.enter-text {
   text-align: start;
   margin-bottom: 5px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight:500;
 }
-.text-area{
-  margin: 20px 22px 10px ;
+.text-area {
+  margin: 20px 22px 10px;
 }
-textarea{
+textarea {
   width: 100%;
   height: 250px;
   resize: none;
@@ -89,11 +88,11 @@ textarea{
   padding: 10px;
   text-align: justify;
   border-radius: 5px;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*------ Button styles here ----- */
+/*------ Button styles start here ----- */
 .button {
   padding: 1em 2em;
   border: none;
@@ -112,7 +111,6 @@ textarea{
 }
 
 button:hover {
-  
   color: #ffffff;
   transform: scale(1);
   outline: 2px solid #70bdca;
@@ -135,8 +133,7 @@ button::before {
 button:hover::before {
   width: 250%;
 }
-
-/*------ Button styles en here ----- */
+/*------ Button styles end here ----- */
 
 
 /* Media query for smaller screens */
@@ -144,22 +141,14 @@ button:hover::before {
   .main-section {
     width: 90%; /* Adjusted width for smaller screens */
   }
- 
 }
-@media screen and (max-width: 320px){
-   .button {
-  padding: 1em 1.5em;
-  border-radius: 5px;
-  font-weight: bold;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: #2f3640;
-  transition: all 1000ms;
-  font-size: 14px;
-  outline: 1px solid #2c9caf;
-}
-.text-area{
-  margin: 20px 10px 10px ;
-}
+@media screen and (max-width: 320px) {
+  .button {
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .text-area {
+    margin: 20px 10px 10px;
+  }
 }

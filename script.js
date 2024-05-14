@@ -12,7 +12,7 @@ function speakText() {
     utterance.text = text;
 
     // Call the speech synthesis API to speak the text
-    speechSynthesis.speak(utterance);
+    window.speechSynthesis.speak(utterance);
   } else {
     // Inform the user to enter text
     alert("Please enter text to speak.");
