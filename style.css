@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+        circle farthest-side at 0% 50%,
+        #282828 23.5%,
+        rgba(255, 170, 0, 0) 0
+      )
+      21px 30px,
+    radial-gradient(
+        circle farthest-side at 0% 50%,
+        #2c3539 24%,
+        rgba(240, 166, 17, 0) 0
+      )
+      19px 30px,
+    linear-gradient(
+        #282828 14%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 85%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        150deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(
+        30deg,
+        #282828 24%,
+        #2c3539 0,
+        #2c3539 26%,
+        rgba(240, 166, 17, 0) 0,
+        rgba(240, 166, 17, 0) 74%,
+        #2c3539 0,
+        #2c3539 76%,
+        #282828 0
+      )
+      0 0,
+    linear-gradient(90deg, #2c3539 2%, #282828 0, #282828 98%, #2c3539 0%) 0 0
+      #282828;
+  background-size: 40px 60px;
+}
+
+.main-section{
+  border-radius: 10px;
+  width: 50%;
+  max-width: 800px;
+
+  background-color: #35e6c2af;
+  margin: 25px auto 0px;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.main-section h1{
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.enter-text{
+  text-align: start;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.text-area{
+  margin: 20px 22px 10px ;
+}
+textarea{
+  width: 100%;
+  height: 250px;
+  resize: none;
+  overflow-y: auto;
+  padding: 10px;
+  text-align: justify;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*------ Button styles here ----- */
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2f3640;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 1px solid #2c9caf;
+  margin-right: 4px;
+}
+
+button:hover {
+  
+  color: #ffffff;
+  transform: scale(1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2f3640;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+/*------ Button styles en here ----- */
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .main-section {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+ 
+}
+@media screen and (max-width: 320px){
+   .button {
+  padding: 1em 1.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2f3640;
+  transition: all 1000ms;
+  font-size: 14px;
+  outline: 1px solid #2c9caf;
+}
+.text-area{
+  margin: 20px 10px 10px ;
+}
+}
